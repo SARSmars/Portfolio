@@ -3,9 +3,10 @@ const heroSubheading = document.getElementById('heroSubheading');
 
 // Array of strings to be typed out one after another
 const textArray = [
-  "Passionate Web Developer",
+  " Web Developer",
   "Tech Enthusiast",
-  "Freelancer"
+  // "Freelancer"
+  "Mechanical Engineer"
 ];
 
 // Variables to control the typing effect
