@@ -51,3 +51,40 @@ function typeEffect() {
 
 // Start the typing effect
 typeEffect();
+
+
+
+// Language Page
+
+  document.getElementById("language-select").addEventListener("change", function() {
+    const page = this.value;
+    if (page) {
+      window.location.href = page; // redirect to the chosen language page
+    }
+  });
+
+
+
+  // Skills Page
+
+    document.getElementById("fullstack-select").addEventListener("change", function() {
+    const page = this.value;
+    if (page) {
+      window.location.href = page; // Navigate to selected page
+    }
+  });
+
+
+  // App development
+
+function toggleDropdown(button) {
+  const dropdown = button.parentElement;
+  dropdown.classList.toggle("show");
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("show"));
+  }
+}
